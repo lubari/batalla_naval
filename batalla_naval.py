@@ -22,10 +22,10 @@ def elegir_jugador():
 
 def elegir_tamanio():
 	print("El minimo del tablero es de 10 y su maximo 24")
-	tamanio = input("Eliga el tamanio deseado del tablero: \n")
+	tamanio = input("Elija el tamanio deseado del tablero: \n")
 
 	while not tamanio.isdecimal() or int(tamanio) < MIN or int(tamanio) > MAX:
-		tamanio = input("Eliga el tamanio deseado del tablero: \n")
+		tamanio = input("Elija el tamanio deseado del tablero: \n")
 
 	print(f"El tamanio elegido es: {tamanio}")
 	return int(tamanio)
